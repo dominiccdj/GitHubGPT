@@ -17,7 +17,6 @@ module.exports = (app) => {
     return context.octokit.issues.createComment(issueComment);
   });
 
-
   // Issue comment created
   app.on("issue_comment.created", async (context) => {
 
